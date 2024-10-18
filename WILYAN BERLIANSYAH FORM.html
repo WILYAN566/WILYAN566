@@ -1,0 +1,92 @@
+
+<head>
+    <title>Registrasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            padding: 20px;
+        }
+        .container h2 {
+            margin-top: 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .form-group textarea {
+            height: 60px;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registrasi</h2>
+        <div class="form-group">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" placeholder="Nama lengkap...">
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username...">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your email...">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password...">
+        </div>
+        <div class="form-group">
+            <label>Jenis kelamin:</label>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="laki-laki">
+            <label for="laki-laki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan">
+            <label for="perempuan">Perempuan</label>
+        </div>
+        <div class="form-group">
+            <label for="agama">Agama:</label>
+            <select id="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+                <option value="lainnya">Lainnya</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="biografi">Biografi:</label>
+            <textarea id="biografi"></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">submit</button>
+        </div>
+    </div>
+</body>
+</html>
